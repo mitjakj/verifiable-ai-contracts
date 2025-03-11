@@ -30,4 +30,4 @@ Run `npm run flatten`.
 
 > Smart contract deployment instructions.
 
-Run `npx hardhat run --network coston2 ./scripts/path-to-deployment-script.js`
+Run `npx hardhat run --network coston2 ./scripts/deploy-verifiable-answer.js`
