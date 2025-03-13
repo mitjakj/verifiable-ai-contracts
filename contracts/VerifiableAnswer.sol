@@ -52,7 +52,7 @@ contract VerifiableAnswer {
         string memory question
     ) external payable {
         require(answers[answerId].timestamp == 0, "Answer already set.");
-        require(msg.value != submitCost, "Wrong cost.");
+        require(msg.value == submitCost, "Wrong cost.");
 
         answers[answerId] = Answer({
             question: question,
